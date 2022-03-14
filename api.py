@@ -53,9 +53,9 @@ class LoacalCachingSerivce(Resource):
         os.chdir(new_path)
 
         try:
-                article = str(convertFileToVar(filename))
+            article = str(convertFileToVar(filename))
         except: 
-                article = ""
+            article = ""
 
         os.chdir(curr_path)
 

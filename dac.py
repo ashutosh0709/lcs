@@ -55,7 +55,7 @@ def connecttoDb():
     arangoURL = os.getenv('arangoURL')
 
     from pyArango.connection import Connection
-    conn = Connection(username=arangodb_username, password=arangodb_password) # arangoURL=arangoURL , 
+    conn = Connection(arangoURL=arangoURL, username=arangodb_username, password=arangodb_password) # arangoURL=arangoURL , 
  
     try:
         db = conn.createDatabase(name=database_name) #handles creation of db
